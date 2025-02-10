@@ -1,0 +1,30 @@
+post http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "John parça dos santos",
+  "email": "jonyy.doe@example.com"
+}
+
+###
+
+get http://localhost:3000/users
+
+###
+
+get http://localhost:3000/users/354a3b3e-4d24-4e29-a8d7-751ab199229e
+
+###
+
+put http://localhost:3000/users/fdb165de-2c8b-4cac-9548-ec6c9c270ce2
+Content-Type: application/json
+
+{
+  "id": "fdb165de-2c8b-4cac-9548-ec6c9c270ce2",
+  "name": "John parça atualizado2",
+  "email": "john.doe@example.com"
+}
+
+###
+
+delete http://localhost:3000/users/3ce7d66d-9ef3-4883-8250-024e5a677048
